@@ -37,6 +37,12 @@ export default class NordigenClient {
      */
     account(accountId: string): AccountApi;
     /**
+     * Construct Account Premium object
+     * @param {string} accountId
+     * @returns {AccountPremiumApi}
+     */
+    accountPremium(accountId: string): AccountPremiumApi;
+    /**
      * Request wrapper
      * @param {Object} params
      * @param {string} params.endpoint API endpoint
@@ -88,5 +94,6 @@ import { InstitutionApi } from "./api/index.js";
 import { AgreementApi } from "./api/index.js";
 import { RequisitionsApi } from "./api/index.js";
 import { AccountApi } from "./api/index.js";
+import { AccountPremiumApi } from "./api/index.js";
 import { HttpMethod } from "./httpMethod.js";
 //# sourceMappingURL=index.d.ts.map

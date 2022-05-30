@@ -49,6 +49,8 @@ const accountId = requisitionData.accounts[0];
 
 // Create account data instance
 const account = client.account(accountId);
+// Create account premium data instance
+const accountPremium = client.accountPremium(accountId);
 // Fetch account metadata
 const metadata = await account.getMetadata();
 // Fetch account balances
